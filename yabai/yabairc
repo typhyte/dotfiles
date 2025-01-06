@@ -1,0 +1,22 @@
+#configures yabai to run scripting edition without pass
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+#global settings
+yabai -m config 				              \
+	layout 			          bsp 		      \
+	window_placement 	    second_child	\
+	top_padding		        12		        \
+	bottom_padding		    12		        \
+	left_padding		      12		        \
+	right_padding		      12		        \
+	window_gap		        12		        \
+	auto_balance		      on		        \
+	mouse_modifier 		    cmd		        \
+	mouse_action1 		    move		      \
+	mouse_action2 		    resize		    \
+	focus_follows_mouse 	autofocus	    \
+	window_shadow		      off		        \
+	window_opacity		    on		        \
+	active_window_opacity	1.0		        \
+	normal_window_opacity	0.9		        \
